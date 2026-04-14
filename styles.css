@@ -119,9 +119,9 @@ ul {
 .hero {
     position: relative;
     color: var(--blanco);
-    background:
-        linear-gradient(rgba(30, 7, 12, 0.68), rgba(30, 7, 12, 0.72)),
-        url('https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1600&q=80') center/cover;
+    background-image: url("imagenes/pastoreo_res8.jpg");
+    background-size: cover;
+    background-position: center;
     min-height: 78vh;
     display: flex;
     align-items: center;
@@ -268,6 +268,12 @@ ul {
 
 .carousel .track .slide .action h2{
    color: #65151f;
+   font-size: large;
+}
+
+.carousel .track .slide .action p{
+   color: #2a1a16;
+   font-size: medium;
 }
 
 .carousel .carousel-btn {
@@ -303,6 +309,14 @@ ul {
 .section.dark {
     background: var(--vino-oscuro);
     color: var(--blanco);
+}
+
+.dark .stat-box h3 {
+    color: var(--vino);
+}
+
+.dark .stat-box p {
+    color: var(--texto);
 }
 
 .section-title {

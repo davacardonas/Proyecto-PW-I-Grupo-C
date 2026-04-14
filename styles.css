@@ -119,7 +119,7 @@ ul {
 .hero {
     position: relative;
     color: var(--blanco);
-    background-image: url("imagenes/pastoreo_res8.");
+    background-image: url("imagenes/pastoreo_res8.jpg");
     background-size: cover;
     background-position: center;
     min-height: 78vh;

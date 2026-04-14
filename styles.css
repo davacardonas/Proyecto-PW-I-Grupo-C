@@ -217,6 +217,81 @@ ul {
     margin-bottom: 4px;
 }
 
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.carousel .track {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: 60vh;
+    left: 0vw;
+    transition: left 0.7s ease-in-out;
+}
+
+.carousel .track .slide {
+    flex: 0;
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+}
+
+.carousel .track .slide .image {
+    width: 100vw;
+    height: 60vh;
+}
+
+.carousel .track .slide .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.carousel .track .slide .action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 200px;
+    padding-left: 1rem;
+    background-color: #efe4d1;
+    box-shadow: 3px 3px #333;
+    border-radius: 8px;
+}
+
+.carousel .track .slide .action h2{
+   color: #65151f;
+}
+
+.carousel .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4rem;
+    width: 4rem;
+    background-color: #2a0c1275;
+    color: #d6b06a;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-radius: 8px;
+}
+
+.carousel .carousel-btn.btnright {
+    right: 80px;
+}
+
+.carousel .carousel-btn.btnleft {
+    left: 80px;
+}
+
 .section {
     padding: 72px 0;
 }
@@ -497,6 +572,17 @@ textarea {
     margin-bottom: 12px;
 }
 
+.error {
+    border-color: red;
+    outline-color: red;
+}
+.error-text {
+    font-weight: bold;
+    color: #760000;
+    font-size: 0.75rem;
+}
+
+
 @media (max-width: 980px) {
     .grid-2,
     .grid-3,
@@ -548,3 +634,4 @@ textarea {
         padding: 22px;
     }
 }
+

@@ -266,37 +266,41 @@ ul {
     border-radius: 8px;
 }
 
-.carousel .track .slide .action h2{
-   color: #65151f;
-   font-size: large;
+.carousel .track .slide .action h2 {
+    color: #65151f;
+    font-size: large;
 }
 
-.carousel .track .slide .action p{
-   color: #2a1a16;
-   font-size: medium;
+.carousel .track .slide .action p {
+    color: #2a1a16;
+    font-size: medium;
 }
 
+/* --- BOTONES CORREGIDOS --- */
 .carousel .carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    height: 4rem;
-    width: 4rem;
-    background-color: #2a0c1275;
-    color: #d6b06a;
-    font-weight: bold;
-    font-size: large;
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     border: none;
-    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(42, 12, 18, 0.6);
+    color: var(--dorado);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background 0.2s ease;
 }
 
-.carousel .carousel-btn.btnright {
-    right: 80px;
+.carousel .carousel-btn:hover {
+    background: rgba(42, 12, 18, 0.9);
 }
 
-.carousel .carousel-btn.btnleft {
-    left: 80px;
-}
+.carousel .carousel-btn.btnleft  { left: 16px; }
+.carousel .carousel-btn.btnright { right: 16px; }
+/* ------------------------- */
 
 .section {
     padding: 72px 0;
@@ -590,12 +594,12 @@ textarea {
     border-color: red;
     outline-color: red;
 }
+
 .error-text {
     font-weight: bold;
     color: #760000;
     font-size: 0.75rem;
 }
-
 
 @media (max-width: 980px) {
     .grid-2,
@@ -648,4 +652,3 @@ textarea {
         padding: 22px;
     }
 }
-

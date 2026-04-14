@@ -70,9 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 errorSpan.classList.add('error-text');
                 container.appendChild(errorSpan);
             });
-            
         }
-
     });
 });
 
@@ -135,7 +133,7 @@ class Carousel {
         this.track.style.left = `${-100 * this.currentIndex}vw`;
     }
 
-    GenerateNavigationUI () {
+    GenerateNavigationUI() {
         let btnLeft = document.createElement("BUTTON");
         let btnRight = document.createElement("BUTTON");
 

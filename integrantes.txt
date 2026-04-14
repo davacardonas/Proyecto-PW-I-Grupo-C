@@ -13,4 +13,7 @@ Github ID: GermanFernandoTrochez
 Github ID: VidalCisne  
 
 
+Enlace de repositorio: https://github.com/davacardonas/Proyecto-PW-I-Grupo-C
+Sitio desplegado en Pages: https://davacardonas.github.io/Proyecto-PW-I-Grupo-C/index.html
+Video de Youtube: https://youtu.be/wv8NHrFQysg
 
